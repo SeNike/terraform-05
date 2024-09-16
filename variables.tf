@@ -188,3 +188,27 @@ variable "serial-port-enable_example"  {
   default = 1
   description = "serial-port-enable"
 }
+
+variable "single_ip" {
+  type        = string
+  description = "ip-адрес"
+  
+  validation {
+    condition     = can(regex("^([0-9]{1,3}\\.){3}[0-9]{1,3}$", var.single_ip)) && cidrhost("${var.single_ip}/32", 0) != null
+    error_message = "Значение переменной должно быть корректным IP-адресом."
+  }
+  default = "192.168.0.1"  # Test with valid IP
+}
+
+
+variable "list_of_ips" {
+  type        = list(string)
+  description = "список ip-адресов"
+
+  validation {
+    condition     = alltrue([for ip in var.list_of_ips : can(regex("^([0-9]{1,3}\\.){3}[0-9]{1,3}$", ip)) && cidrhost("${ip}/32", 0) != null])
+    error_message = "Все адреса в списке должны быть корректными IP-адресами."
+  }
+  default = ["192.168.0.1", "1.1.1.1", "127.0.0.1"]  # Test with valid IPs
+}
+
