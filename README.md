@@ -14,7 +14,6 @@
   - Переменная объявлена, но не используется
   - В качестве ссылки на исходный код модуля используется указатель на ветку по умолчанию (main)
   # checkov
-
   - Check: CKV_TF_2: "Ensure Terraform module sources use a tag with a version number"
   - Check: CKV_TF_1: "Ensure Terraform module sources use a commit hash"
 ------
@@ -23,11 +22,18 @@
 
 1. Возьмите ваш GitHub-репозиторий с **выполненным ДЗ 4** в ветке 'terraform-04' и сделайте из него ветку 'terraform-05'.
 2. Повторите демонстрацию лекции: настройте YDB, S3 bucket, yandex service account, права доступа и мигрируйте state проекта в S3 с блокировками. Предоставьте скриншоты процесса в качестве ответа.
+
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/1.png)
+
 3. Закоммитьте в ветку 'terraform-05' все изменения.
 4. Откройте в проекте terraform console, а в другом окне из этой же директории попробуйте запустить terraform apply.
 5. Пришлите ответ об ошибке доступа к state.
+
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/2.png)
+
 6. Принудительно разблокируйте state. Пришлите команду и вывод.
 
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/3.png)
 
 ------
 ### Задание 3  
