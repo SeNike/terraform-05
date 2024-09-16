@@ -23,7 +23,7 @@
 1. Возьмите ваш GitHub-репозиторий с **выполненным ДЗ 4** в ветке 'terraform-04' и сделайте из него ветку 'terraform-05'.
 2. Повторите демонстрацию лекции: настройте YDB, S3 bucket, yandex service account, права доступа и мигрируйте state проекта в S3 с блокировками. Предоставьте скриншоты процесса в качестве ответа.
 
-![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/1.png)
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/1.1.png)
 
 3. Закоммитьте в ветку 'terraform-05' все изменения.
 4. Откройте в проекте terraform console, а в другом окне из этой же директории попробуйте запустить terraform apply.
