@@ -10,3 +10,9 @@ resource "yandex_vpc_subnet" "this" {
 resource "yandex_vpc_network" "this" {
   name = "${var.env_name}-network"
 }
+
+resource "yandex_vpc_security_group" "example" {
+  name        = "example-security-group"
+  description = "Security group for example"
+  network_id = yandex_vpc_network.this.id
+}
