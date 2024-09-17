@@ -98,6 +98,11 @@ variable "in_the_end_there_can_be_only_one" {
     }
 }
 ```
+# ОТВЕТ:
+
+```
+    condition = var.in_the_end_there_can_be_only_one["Dunkan"] != var.in_the_end_there_can_be_only_one["Connor"]
+```
 ------
 ### Задание 6*
 
