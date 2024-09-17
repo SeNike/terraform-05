@@ -212,3 +212,21 @@ variable "list_of_ips" {
   default = ["192.168.0.1", "1.1.1.1", "127.0.0.1"]  # Test with valid IPs
 }
 
+
+variable "in_the_end_there_can_be_only_one" {
+    description="Who is better Connor or Duncan?"
+    type = object({
+        Dunkan = optional(bool)
+        Connor = optional(bool)
+    })
+
+    default = {
+        Dunkan = false
+        Connor = true
+    }
+
+    validation {
+        error_message = "There can be only one MacLeod"
+        condition = var.in_the_end_there_can_be_only_one["Dunkan"] != var.in_the_end_there_can_be_only_one["Connor"]
+    }
+}
