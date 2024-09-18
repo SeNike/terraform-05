@@ -109,7 +109,13 @@ condition = var.in_the_end_there_can_be_only_one["Dunkan"] != var.in_the_end_the
 1. Настройте любую известную вам CI/CD-систему. Если вы ещё не знакомы с CI/CD-системами, настоятельно рекомендуем вернуться к этому заданию после изучения Jenkins/Teamcity/Gitlab.
 2. Скачайте с её помощью ваш репозиторий с кодом и инициализируйте инфраструктуру.
 3. Уничтожьте инфраструктуру тем же способом.
-Jenkins
+
+# ОТВЕТ:
+
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/8.0.png)
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/8.1.png)
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/8.2.png)
+![img](https://github.com/SeNike/Study_24/blob/main/t-s-5/8.3.png)
 
 ------
 ### Задание 7*
