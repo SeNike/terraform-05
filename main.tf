@@ -7,7 +7,7 @@ module "vpc_dev" {
 
 # Виртуальная машина для проекта "marketing"
 module "marketing_vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4d05fab"
   env_name       = var.env_name
   network_id     = var.network_id
   subnet_zones   = var.subnet_zones_marketing
@@ -30,7 +30,7 @@ module "marketing_vm" {
 
 # Виртуальная машина для проекта "analytics"
 module "analytics_vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4d05fab"
   env_name       = var.env_name
   network_id     = var.network_id
   subnet_zones   = var.subnet_zones_analytics
@@ -51,7 +51,7 @@ module "analytics_vm" {
   }
 }
 module "example-vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4d05fab"
   env_name       = var.env_name
   network_id     = var.network_id
   subnet_zones   = var.subnet_zones_example
